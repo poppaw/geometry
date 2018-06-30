@@ -1,12 +1,13 @@
 package com.codecool.java.geometry.shapes;
 
 
-import com.codecool.java.NotYetImplementedException;
+//import com.codecool.java.NotYetImplementedException;
 
 /**
  * This is a abstract class representing geometrical shape.
  */
 public abstract class Shape {
+
     /**
      * Calculates shape's area.
      * @return area of the shape
@@ -32,12 +33,21 @@ public abstract class Shape {
     public abstract String getPerimeterFormula();
 
     /**
+     * Returns class information and its attributes
+     * @return String with class name and attributes
+     */
+    public abstract String toString();
+
+    /**
      * Check if any of args are not below 0.
      * Throws IllegalArgumentException if any of the parameters is 0 or less.
      * @param args
      * @return true if any of args are greater than 0
      */
     public static boolean checkIfArgsGreaterThanZero(float... args) {
-        throw new NotYetImplementedException();
+        for (float arg: args){
+            if(arg <=0) throw new IllegalArgumentException("Argument: " +arg);
+        }
+        return true;
     }
 }
