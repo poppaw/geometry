@@ -3,18 +3,17 @@ package com.codecool.java.geometry.shapes;
 public class EquilateralTriangle extends Triangle {
 
     public EquilateralTriangle(float a) throws IllegalArgumentException{
-        super(a);
+        super(a,a,a);
     }
 
     @Override
     public String getAreaFormula(){
-        //return "sqrt(s(s-a)(s-b)(s-c)), where s = (a+b+c)/2";
-        return "a^2 sqrt(3) /4";
+        return Shapes.EQUILATERAL_TRIANGLE.getArea();
     }
 
     @Override
     public String getPerimeterFormula(){
-        return "3a";
+        return Shapes.EQUILATERAL_TRIANGLE.getPerimeter();
     }
 
     @Override

@@ -31,12 +31,12 @@ public class Rectangle extends Shape {
 
     @Override
     public String getAreaFormula(){
-        return "a*b";
+        return Shapes.RECTANGLE.getArea();
     }
 
     @Override
     public String getPerimeterFormula(){
-        return "2a + 2b";
+        return Shapes.RECTANGLE.getPerimeter();
     }
 
     @Override

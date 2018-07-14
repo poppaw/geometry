@@ -39,12 +39,12 @@ public class Triangle extends Shape {
 
     @Override
     public String getAreaFormula(){
-        return "sqrt(s(s-a)(s-b)(s-c)), where s = (a+b+c)/2";
+        return Shapes.TRIANGLE.getArea();
     }
 
     @Override
     public String getPerimeterFormula(){
-        return "a + b + c";
+        return Shapes.TRIANGLE.getPerimeter();
     }
 
     @Override

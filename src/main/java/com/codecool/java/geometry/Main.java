@@ -76,7 +76,7 @@ public class Main {
 
     private static void displayMenu(String[]menuContent, boolean hasNext){
         int upperLimes;
-        if (hasNext) upperLimes = menuContent.length; //displays entire menu if (shapes.size()>0);
+        if (hasNext) upperLimes = menuContent.length-1; //displays entire menu if (shapes.size()>0);
         else upperLimes = 2; //display only first two options from menu;
         
         System.err.println("\n\tSelect an option:\n");

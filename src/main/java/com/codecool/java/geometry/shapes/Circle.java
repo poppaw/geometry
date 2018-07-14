@@ -20,12 +20,12 @@ public class Circle extends Shape {
 
     @Override
     public String getAreaFormula(){
-        return   "π×r^2";
+        return Shapes.CIRCLE.getArea();
     }
 
     @Override
     public String getPerimeterFormula(){
-        return "2×π×r";
+        return Shapes.CIRCLE.getPerimeter();
     }
 
     @Override
@@ -43,4 +43,5 @@ public class Circle extends Shape {
         System.out.println(Shapes.values()[1].getArea());
         System.out.println(Shapes.values()[1]);
     }
+
 }

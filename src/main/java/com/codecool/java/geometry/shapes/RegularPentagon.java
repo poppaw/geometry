@@ -20,12 +20,12 @@ public class RegularPentagon extends Shape {
 
     @Override
     public String getAreaFormula(){
-        return   "a^2/4 × sqrt(25+ 10sqrt(5))";
+        return   Shapes.REGULAR_PENTAGON.getArea();
     }
 
     @Override
     public String getPerimeterFormula(){
-        return "5×a";
+        return Shapes.REGULAR_PENTAGON.getPerimeter();
     }
 
     @Override

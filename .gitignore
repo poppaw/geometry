@@ -1,5 +1,7 @@
 out/
-production.txt
+sources.txt
+test.txt
+
 # Compiled class file
 *.class
 
@@ -13,7 +15,7 @@ production.txt
 .mtj.tmp/
 
 # Package Files #
-*.jar
+# *.jar
 *.war
 *.ear
 *.zip

@@ -18,12 +18,12 @@ public class Square extends Rectangle {
 
     @Override
     public String getAreaFormula(){
-        return "a^2";
+        return Shapes.SQUARE.getArea();
     }
 
     @Override
     public String getPerimeterFormula(){
-        return "4*a";
+        return Shapes.SQUARE.getPerimeter();
     }
 
     @Override
