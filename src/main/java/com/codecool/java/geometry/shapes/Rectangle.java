@@ -12,13 +12,6 @@ public class Rectangle extends Shape {
         }
     }
 
-    public Rectangle(float a) throws IllegalArgumentException{
-        if (checkIfArgsGreaterThanZero(a)){
-            this.a = a;
-            this.b = a;
-        }
-    }
-
     @Override
     public double calculateArea(){
         return a * b;

@@ -33,6 +33,7 @@ public class Circle extends Shape {
         return getClass().getSimpleName() + ", r =" +r;
     }
 
+    //for test only:
     public static void main(String[] args) throws IllegalArgumentException {
         Circle re = new Circle((float)3.45);
         System.out.println(re);

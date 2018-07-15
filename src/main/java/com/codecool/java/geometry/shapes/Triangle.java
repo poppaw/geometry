@@ -17,15 +17,6 @@ public class Triangle extends Shape {
         }
     }
 
-    public Triangle(float a) throws IllegalArgumentException{
-        if(checkIfArgsGreaterThanZero(a)){
-            //s = 3*a/2.0;
-            this.a = a;
-            this.b = a;
-            this.c = a;
-        }
-    }
-
     @Override
     public double calculateArea(){
         double s = (a+b+c)/2.0;

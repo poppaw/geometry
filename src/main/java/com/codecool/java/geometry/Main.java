@@ -134,7 +134,7 @@ public class Main {
             try {
                 dimension = Float.parseFloat(input.nextLine());
                 if (dimension > 0.0) {
-                    System.out.printf("\nDimension: %f accepted\n",dimension);
+                    System.out.printf("\nDimension: %.2f accepted\n",dimension);
                     return dimension;
                 }
                 else System.out.println("Dimension must be greater than zero");

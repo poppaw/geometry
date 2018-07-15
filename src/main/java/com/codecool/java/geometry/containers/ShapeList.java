@@ -56,9 +56,8 @@ public class ShapeList {  //<T extends Shape>
             shapesTable += String.format("%d %s %s %f %s %f %s", i+1, getClassName(i), listOfShapes.get(i).toString(),
         }*/
         for(Shape shape: listOfShapes){
-            shapesTable += String.format("%d %s %s %f %s %f %s \n"
+            shapesTable += String.format("%d %s %.2f %s %.2f %s \n"
                     ,listOfShapes.indexOf(shape)
-                    ,shape.getClass().getSimpleName()
                     ,shape.toString()
                     ,shape.calculatePerimeter()
                     ,shape.getPerimeterFormula()
